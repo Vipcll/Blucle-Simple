@@ -1,36 +1,29 @@
-var numeroSecreto;
+var numeroSecreto; 
 var contadorIntentos = 0;
-var numeroIngresado;
-var numero;
-var salir;
-var min = 1;
 var max = 11;
+var min = 1;
+var numeroIngresado;
 
-numeroSecreto = getRandomNum(min, max);
-console.log(numeroSecreto);
-comenzar();
 
 function comenzar()
 {
-numeroSecreto = Math.floor(Math.random() * (max - min))+ min;
-console.log(numeroSecreto);
+    numeroSecreto = Math.floor(Math.random() * (max - min))+ min;
+    console.log(numeroSecreto);
+    contadorIntentos = 0;
+    document.getElementById("intentos").value = contadorIntentos;
+    document.getElementById("resultado").innerHTML =" ";
 }
 
 function verificar()
 {
     numeroIngresado = document.getElementById("numero").value;
     contadorIntentos = contadorIntentos + 1;
-    document.getElementById("intentos").innetHTML = "cantidad de intentos: " + contadorIntentos;
-
+    document.getElementById("intentos").value = contadorIntentos;
     if(numeroSecreto == numeroIngresado){
-        alert("Usted es un ganador en solo "+ contadorIntentos + " intentos.");
+        document.getElementById("resultado").innerHTML = "Usted es un ganador en solo "+ contadorIntentos + " intentos."
     }else if(numeroIngresado < numeroSecreto){
-        alert("Falta...");
+        document.getElementById("resultado").innerHTML ="Falta...";
     }    else {
-        alert("Se paso...");
+        document.getElementById("resultado").innerHTML ="Se paso...";
     }
-    }
-
-function getRandomNum(min, max) {
-    return Math.floor(Math.random() * (max - min))+ min;
 }

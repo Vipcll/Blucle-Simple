@@ -18,9 +18,15 @@
 			</h2>
 
             <form >
+                <a  class="MiBoton" onclick="comenzar()" >Generar numero/Reinciar juego</a>
+                <br>
                 <input type="text"  placeholder="Ingrese número" id="numero">
-                <p id="intentos"> cantidad de intentos: 0 </p>
-                <button  class="MiBoton" onclick="verificar()" >Comenzar</button>
+                <br>
+				<input type="text"  placeholder="intentos" readonly id="intentos">
+                <br>
+		        <a  class="MiBoton" onclick="verificar()" >Verificar</a>
+                <br> <br>
+                <p id="resultado"> </p>
             </form>	
     <script type="text/javascript" src="arrays.js"></script>
 
