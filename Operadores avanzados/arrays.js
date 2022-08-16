@@ -9,13 +9,17 @@ let numero = [1,0,0,0,0,0,0,0,0];
 numero = numero.sort(()=>{return Math.random()-0.5});
 console.log(numero);
 
+
 const botonDark = document.getElementById('botonDarkMode');
 const botonLight = document.getElementById('botonLightMode');
+
 
 function tarjetas(id){
 
     tarjeta = document.getElementById(id);
     resultado = numero[id];
+
+    (vidas<=0) && hola();
 
     if(vidas >= 0 && win == false){
         contadorIntentos++;
@@ -33,9 +37,18 @@ function tarjetas(id){
         }
 
     }else{
-        (win == true) ? document.getElementById("resultado").innerHTML = "Ya has ganado, refresca la pagina para volver a jugar" : document.getElementById("resultado").innerHTML = "Has perdido, refresca la pagina para volver a jugar"
+        (win == true) ? document.getElementById("resultado").innerHTML = "Ya has ganado, refresca la pagina para volver a jugar" : document.getElementById("resultado").innerHTML = "Has perdido, refresca la pagina para volver a jugar";
+        
     }
+}
 
+function hola() {
+    for(let i=0; i<numero.length; i++) {
+        if(numero[i]==1) {
+            document.getElementById(i).innerHTML = "<img src= carta.jpg>";
+            console.log("hola")
+        }
+    }
 }
 
 if(localStorage.getItem('colorMode')) {
@@ -58,3 +71,4 @@ botonLight.addEventListener('click', () => {
     localStorage.setItem('colorMode', "light");
     document.getElementById("mainDos").classList.remove("mainColorVioleta");
 })
+
