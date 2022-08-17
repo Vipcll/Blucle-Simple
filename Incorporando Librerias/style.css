@@ -1,0 +1,56 @@
+body{ background-color: antiquewhite;}
+
+
+.mainDos
+{
+
+    width: 315px;
+    border: 5px solid #f76ae0;
+    box-shadow: 5px 5px 30px 1px #f76ae0;
+    border-radius: 10px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+h1,p
+{
+    text-align: center;
+}
+
+
+td button
+{
+    height: 100px;
+    width: 100px;
+    color: black;
+    font-weight: rgb(249, 253, 224);
+    
+}
+
+.section1
+{
+    background-color: black;
+    align-items: center;
+}
+
+.nightMod
+{
+    display: flex;
+    width: 70%;
+    margin: 0px 500px 500px 100%;
+}
+
+.darkMode {
+    background-color: black;
+    color:beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.mainColorVioleta
+{
+    border: 5px solid #560bad;
+    box-shadow: 5px 5px 30px 1px #560bad;
+}
