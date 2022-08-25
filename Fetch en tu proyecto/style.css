@@ -1,0 +1,76 @@
+body{ background-color: antiquewhite;}
+
+
+.mainDos
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 40%;
+    width: 414px;
+    border: 5px solid #f76ae0;
+    box-shadow: 5px 5px 30px 1px #f76ae0;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+h1,p
+{
+    text-align: center;
+}
+
+
+td button
+{
+    height: 100px;
+    width: 100px;
+    color: black;
+    font-weight: rgb(249, 253, 224);
+    
+}
+
+.section1
+{
+    background-color: black;
+    align-items: center;
+}
+
+.nightMod
+{
+    display: flex;
+}
+
+.darkMode {
+    background-color: black;
+    color:beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.mainColorVioleta
+{
+    border: 5px solid #560bad;
+    box-shadow: 5px 5px 30px 1px #560bad;
+}
+
+.stats
+{
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 1px 1px rgb(112, 111, 111);
+    display: block;
+    text-align: center;
+
+}
+
+#reset
+{
+    position: flex;
+    width: 90px;
+}
+
+.leaderboard-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
