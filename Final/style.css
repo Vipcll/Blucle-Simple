@@ -71,7 +71,6 @@ td button
 
 .leaderboard-container
 {
-    background-color: black;
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -79,4 +78,11 @@ td button
 .backgrand
 {
     background-color: black;
+    color:beige;
+}
+
+.tituloboard
+{
+    background-color: antiquewhite;
+    color:black;
 }
