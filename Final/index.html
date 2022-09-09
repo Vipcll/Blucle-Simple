@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="reset">Reset</button>
+        <section class="nightMod">
+        <button id="botonDarkMode" class="btn btn-dark">Dark</button><br><br>
+        <button id="botonLightMode" class="btn btn-light">Light</button>
+        </section>
+    </div>
+    
+
+    <main id="mainDos" class="mainDos">
+        <section class="seccion1">
+            <h1>Vamos a probar tu Suerte</h1>
+            <p>Encuentra el Corazon en 3 intentos</p>
+            <table>
+                <tr>
+                    <td><button id="0" onclick="tarjetas(0)"></button></td>
+                    <td><button id="1" onclick="tarjetas(1)"></button></td>
+                    <td><button id="2" onclick="tarjetas(2)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="3" onclick="tarjetas(3)"></button></td>
+                    <td><button id="4" onclick="tarjetas(4)"></button></td>
+                    <td><button id="5" onclick="tarjetas(5)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="6" onclick="tarjetas(6)"></button></td>
+                    <td><button id="7" onclick="tarjetas(7)"></button></td>
+                    <td><button id="8" onclick="tarjetas(8)"></button></td>
+                </tr>
+            </table>
+            <p id="vidas">Tus vidas son 3</p>
+            <p id="resultado"> </p>
+        <div id="tituloboard" class="stats">
+            <h2>LeaderBoard</h2>
+            <div id="stats" class="leaderboard-container">
+                <h3>nombre</h3>
+                <h3>veces jugadas</h3>
+                <h3>veces ganadas</h3>
+            </div>
+        </div>
+
+        </section>
+        
+    </main>
+
+    <script type="text/javascript" src="arrays.js"></script>
+</body>
+</html>
+

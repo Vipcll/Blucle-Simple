@@ -1,0 +1,17 @@
+[
+    {
+        "nombre":"Veronica",
+        "vecesJugadas":"42",
+        "vecesGanadas":"15"
+    },
+    {
+        "nombre":"Marcos",
+        "vecesJugadas":"1575",
+        "vecesGanadas":"27"
+    },
+    {
+        "nombre":"Ashe",
+        "vecesJugadas":"9",
+        "vecesGanadas":"3"
+    }
+]
